@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Active Form</title>
+</head>
+<body>
+    <div class="parent">
+        <form name="myForm" action="" id="login-form" onsubmit="return validation()">
+            <header>Blogger Contact Form</header>
+            <div class="input-control">
+                <div class="labelname">
+                    <label for="">Name</label>
+                </div>
+                <div class="names">
+                    <input id="first-name" type="text" placeholder="First Name"  name="fname" style=" min-width: 200px;
+                                                                                                        height: 25px;
+                                                                                                        padding: 5px ">
+                    <p class="fname-error" style="margin-bottom: 5px;"></p> 
+                    <input id="last-name" type="text" placeholder="Last Name" name="lname" style=" min-width: 200px; 
+                                                                                                    height: 25px;
+                                                                                                    padding: 5px;
+                                                                                                    margin-top: 15px"
+                                                                                                    maxlength="10">
+                    <p class="lname-error"></p>
+                </div>
+            </div>
+            <div class="input-control">
+                <div class="labelemail">
+                    <label for="">Email</label>
+                </div>
+                <div class="emails">
+                    <input id="email" type="text" placeholder="Enter  your Email" name="email" style=" min-width: 200px; 
+                                                                                                            height: 25px;
+                                                                                                            padding: 5px ">
+                    <p class="email-error"></p>
+                </div>
+            </div>
+            <div class="input-control">
+                <div class="labelnums">
+                    <label for="">Phone Number</label>
+                </div>
+                <div class="nums" style="display: flex; justify-content: spase-between">
+                    <div class="area-code" style=" margin-right: 5%; width: 30%">
+                        <input id="area-code" type="text" placeholder="" name="area code" style=" min-width: 66px; 
+                                                                                                    height: 25px;
+                                                                                                    padding: 5px; 
+                                                                                                    margin-bottom: 5px "
+                                                                                                    maxlength="3">
+                        <p style="opacity: .8; font-size: 12px">Area Code</p>
+                        <p class="code-error"></p>
+                    </div>
+                    <div class="phone" style=" width: 60%">
+                        <input id="phone-number" type="text" placeholder="" name="phone number" style=" min-width: 105px; 
+                                                                                                        height: 25px;
+                                                                                                        padding: 5px;
+                                                                                                        margin-bottom: 5px "
+                                                                                                        maxlength="11">
+                        <p style="opacity: .8; font-size: 12px">Phone Number</p>
+                        <p class="phone-error"></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="input-control">
+                <div class="labelurl">
+                    <label for="">Website Url</label>
+                </div>
+                <div class="urls">
+                    <input id="url" type="text" style=" min-width: 200px; 
+                                                height: 25px;
+                                                padding: 5px ">
+                    <p class="url-error"></p>
+                </div>
+
+            </div> 
+            <div class="message" style="display: block;">
+                <label for="">Message</label>
+                    <div class="messages" style="margin-top: 10px;">
+                    <p class="message-erro" style="margin: 3px 0px 10px 100px"></p>
+                    <textarea name="" id="textArea" cols="30" rows="10"></textarea>
+            </div>  
+            <div class="submit">
+                <input id="submit" type="submit" name="submit" style=" width: 100%; 
+                                                                                        height: 100%; 
+                                                                                        border: none; 
+                                                                                        background: rgb(70, 196, 70); 
+                                                                                        color: white;
+                                                                                        font-size: 20px;
+                                                                                        cursor: pointer ">
+            </div> 
+        </form>
+    </div>
+
+
+        <script src="form.js"></script>  
+</body>
+</html>
